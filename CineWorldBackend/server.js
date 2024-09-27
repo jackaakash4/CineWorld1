@@ -1,6 +1,7 @@
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
+
 dotenv.config()
 import connectDB from './Database.js'
 
@@ -23,6 +24,8 @@ app.get('/', (req, res) =>{
 app.get('/api/movies' , (req, res)=>{
 	res.send("Movies are here");
 })
+
+
 
 
 app.listen(port, ()=>{
